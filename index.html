@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+	<div class = "background">
+		<div class = "header">
+			<div class ="hea_left">
+				<img src="images/welcome.png" alt="">
+			</div>
+			<div class ="hea_right">
+				<ul>
+					<li id="li1">个人简介</li>
+					<li id="li2">成长履历</li>
+					<li id="li3">专业介绍</li>
+					<li id="li4">我的作品</li>
+				</ul>
+			</div>
+		</div>
+		<div class = "container">
+			<div class = "butt">
+				<a href="work_1/index.html"><button class="butt1">作业1</button></a>
+				<a href="work_2/index.html"><button class="butt2" >作业2</button></a>
+				<a href="work_3/index.html"><button class="butt3">作业3</button></a>
+				<a href="work_4/index.html"><button class="butt4">作业4</button></a>
+				<a href="work_5/index.html"><button class="butt1">作业5</button></a>
+				<!-- <a href=""></a> -->
+			</div>
+			<img class="img3" src="images/hong.png" alt="">
+			<img class="img2" src="images/gong.png" alt="">
+			<img class="img1" src="images/cheng.png" alt="">
+		</div>
+		<div class = "footer">
+			
+		</div>
+		
+	</div>
+	<script src="script/jquery-1.11.1.js"></script>
+	<script>
+		$(".butt1").hide();
+		$(".butt2").hide();
+		$(".butt3").hide();
+		$(".butt4").hide();
+		$("#li4").click(function(){
+			$(".butt1").fadeIn("slow" );
+			$(".butt2").fadeIn("slow" );
+			$(".butt3").fadeIn("slow" );
+			$(".butt4").fadeIn("slow" );
+		});
+
+
+	</script>
+</body>
+</html>
