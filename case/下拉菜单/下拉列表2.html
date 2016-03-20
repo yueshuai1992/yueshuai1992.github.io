@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			padding:0;
+			margin:0;
+		}
+		.li1,.li2,.li3{
+			float:left;
+		}
+		.list1,.list2,.list3{
+			width:100px;
+			height:30px;
+			background-color: blue;
+			border:1px solid ;
+			line-height: 30px;
+			text-align: center;
+			color: #fff;
+		}
+		.fz1,.fz2,.fz3{
+			display: none;
+		}
+		li{
+			text-align: center;
+			list-style: none;
+			width:100px;
+			height:30px;
+			background-color:red;
+
+		}
+	</style>
+</head>
+<body>	
+	<div class="li1">
+		<div class="list1">
+			男装
+		</div>
+		<div class="fz1">
+			<ul>
+				<li>特大款</li>
+				<li>大款</li>
+				<li>中款</li>
+				<li>小款</li>
+				<li>大童</li>
+			</ul>
+		</div>
+	</div>
+	<div class="li2">
+		<div class="list2">
+				女装
+		</div>	
+		<div class="fz2">
+			<ul>
+				<li>特大款</li>
+				<li>大款</li>
+				<li>中款</li>
+				<li>小款</li>
+				<li>大童</li>
+			</ul>
+		</div>	
+	</div>
+	<div class="li3">
+		<div class="list3">
+			童装
+		</div>
+		<div class="fz3">
+			<ul>
+				<li>特大款</li>
+				<li>大款</li>
+				<li>中款</li>
+				<li>小款</li>
+				<li>大童</li>
+			</ul>
+		</div>
+	</div>
+	
+	
+	<script src="jquery-1.11.1.js"></script>
+	<script>
+		$(".list1").mouseenter(function(){
+			$(".fz1").stop().slideDown();
+		});
+		$(".list1").mouseleave(function(){
+			$(".fz1").stop().slideUp();
+		});
+		$(".list2").mouseenter(function(){
+			$(".fz2").stop().slideDown();
+		});
+		$(".list2").mouseleave(function(){
+			$(".fz2").stop().slideUp();
+		});
+		$(".list3").mouseenter(function(){
+			$(".fz3").stop().slideDown();
+		});
+		$(".list3").mouseleave(function(){
+			$(".fz3").stop().slideUp();
+		});
+	</script>
+</body>
+</html>

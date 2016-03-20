@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			padding:0;
+			margin:0;
+		}
+
+		li{
+			width:80px;
+			height:20px;
+			border:1px solid red;
+			line-height: 20px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<input type="text" id="tet">
+	<input type="button" value="添加前边" id="Fadd">
+	<input type="button" value="添加后边" id="add">
+	<ul class="list">
+		<li>电视剧</li>
+		<li>电影</li>
+		<li>小品</li>
+	</ul>
+	<script src="jquery-1.11.1.js"></script>
+	<script>
+		$("#add").click(function(){
+			var ad = $("#tet").val();
+			var c ="<li>"+ad+"</li>"
+			$(".list").append(c);
+		});
+		$("#Fadd").click(function(){
+			var add = $("#tet").val();
+			var cd ="<li>"+add+"</li>"
+			$(".list").prepend(cd);
+		});
+	</script>
+</body>
+</html>

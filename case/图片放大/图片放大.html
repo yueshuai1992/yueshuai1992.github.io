@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin:0;
+			padding:0;
+		}
+		img{
+			display: block;
+			float:left;
+		}
+	</style>
+</head>
+<body>
+	<div class="box1">
+		<img class="img1" src="1.jpg" alt="" width="100px" height="100px">
+		<img class="img2" src="2.jpg" alt="" width="100px" height="100px">
+		<img class="img3" src="3.jpg" alt="" width="100px" height="100px">
+		<img class="img4" src="4.jpg" alt="" width="100px" height="100px">
+	</div>
+	<div class="box2">
+		<img class="img5" src="1.jpg" alt="" width="0px" height="0px">
+		<img class="img6" src="2.jpg" alt="" width="0px" height="0px">
+		<img class="img7" src="3.jpg" alt="" width="0px" height="0px">
+		<img class="img8" src="4.jpg" alt="" width="0px" height="0px">
+	</div>
+	<script src="jquery-1.11.1.js"></script>
+	<script>
+		var x =0;
+		var y =0;
+		$("body").mousemove(function(e){
+			 x = e.pageX;
+			 y = e.pageY;
+		});
+		$(".box1 img").mousemove(function(){
+			var num = $(this).index();
+			$(".box2 img").eq(num).css({"height":"500px","width":"500px"});
+			$(".box2 img").eq(num).css({"position":"absolute","top":y,"left":x});
+		});
+		$(".box1 img").mouseleave(function(){
+			var num = $(this).index();
+			$(".box2 img").eq(num).css({"height":"0px","width":"0px"});
+		});
+	</script>
+</body>
+</html>
