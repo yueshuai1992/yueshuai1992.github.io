@@ -327,34 +327,7 @@ h1, h2, h3, h4, h5, h6 {
     background-image: url(../img/parallax/head.jpg);
 }
 
-/*.icon-box {
-	position: relative;
-	width: 160px;
-	height: 92.38px;
-	background-color: transparent;
-	margin: 46.19px auto 60px;
-	padding: 20px 0;
-	border-left: solid 3px #ddd;
-	border-right: solid 3px #ddd;
-	background-image:url("../img/port1.jpg");
 
-	-webkit-transform: translateZ(0px);
-	   -moz-transform: translateZ(0px);
-		-ms-transform: translateZ(0px);
-		 -o-transform: translateZ(0px);
-			transform: translateZ(0px);
-
-	-webkit-transition-duration: 0.3s;
-	   -moz-transition-duration: 0.3s;
-		 -o-transition-duration: 0.3s;
-			transition-duration: 0.3s;
-
-	-webkit-transition-property: transform;
-	   -moz-transition-property: transform;
-		 -o-transition-property: transform;
-			transition-property: transform;
-}
-*/
 .icon-box:hover {
 	-webkit-transform: translateY(-10px);
 	   -moz-transform: translateY(-10px);
@@ -363,22 +336,7 @@ h1, h2, h3, h4, h5, h6 {
 			transform: translateY(-10px);
 }
 
-/*.icon-box:before,
-.icon-box:after {
-	content: "";
-	position: absolute;
-	z-index: 1;
-	width: 113.14px;
-	height: 113.14px;
-	background-color: inherit;
-	left: 20.4315px;
 
-	-webkit-transform: scaleY(0.5774) rotate(-45deg);
-	   -moz-transform: scaleY(0.5774) rotate(-45deg);
-		-ms-transform: scaleY(0.5774) rotate(-45deg);
-		 -o-transform: scaleY(0.5774) rotate(-45deg);
-			transform: scaleY(0.5774) rotate(-45deg);*/
-}
 .icon-box:before {
 	top: -56.5685px;
 	border-top: solid 4.2426px #ddd;
@@ -681,6 +639,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: -75px;
     position: absolute;
     top: 0;
+   color:blue;
 }
 
 .percent:after {
