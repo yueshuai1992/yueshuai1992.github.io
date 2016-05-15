@@ -357,12 +357,25 @@ h1, h2, h3, h4, h5, h6 {
 	height: auto;
 }
 .feature-desc_h3{
+    font-size: 30px;
 	text-align: center;
 	color:#6CB670;
 }
 .feature-desc_P{
-	text-indent: 2em;
 	line-height: 36px;
+}
+.YSlist i{
+    color:#4c8bf5;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.YSlist{
+    margin-left: 60px;
+}
+.YSlist li{
+    font-size: 20px;
+    text-indent: -30px;
+    line-height: 30px;
 }
 .feature-desc_P2{
 	margin-top: 30px;
@@ -378,7 +391,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 /*=================================================================
 	Our Benefits 地产
-==================================================================
+==================================================================*/
 
 #main-features {
     padding: 70px 0;
@@ -395,7 +408,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /*=================================================================
 	Item counter section
-==================================================================
+==================================================================*/
 
 #counter {
     background-image: url(../img/parallax/city.jpg);
@@ -420,6 +433,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .counters-item i {
     margin-bottom: 15px;
+    font-size: 40px;
 }
 
 .counters-item h3 {
@@ -647,8 +661,11 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: .1em;
     font-size: .8em;
 }
-
-
+#team-skills i{
+    font-size:50px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
 
 /*=================================================================
 	Our Team 网页
