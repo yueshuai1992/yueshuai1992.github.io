@@ -124,3 +124,11 @@
     <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
     <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
     <!--[if ie]>
+##13/*针对Firefox*/
+    @-moz-document url-prefix() {
+        #nav{ width:200px; }
+    }
+##14/*针对Safari & Chrome*/
+    @media screen and (-webkit-min-device-pixel-ratio:0) {
+        #nav{ width:300px; }
+    }
