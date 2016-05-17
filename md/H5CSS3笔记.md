@@ -119,4 +119,8 @@
     -webkit-         Safari 和 Chrome   苹果浏览器 谷歌浏览器
     -o-              Opera              欧朋浏览器
     -ms-             IE                 IE浏览器
-
+##12.样式表过滤
+    <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+    <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+    <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+    <!--[if ie]>
